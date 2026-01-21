@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>スケジュール管理アプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>スケジュール管理</h1>
+
+<div class="form">
+  <input type="date" id="date">
+  <input type="time" id="start">
+  <input type="time" id="end">
+  <input type="text" id="title" placeholder="予定タイトル">
+  <textarea id="memo" placeholder="メモ"></textarea>
+  <button onclick="addSchedule()">追加</button>
+</div>
+
+<h2>予定一覧</h2>
+<ul id="list"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
