@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>スケジュール管理システム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>スケジュール管理</h1>
+
+  <div class="input-area">
+    <label>日付：<input type="date" id="date"></label>
+    <label>内容：<input type="text" id="title" placeholder="予定内容"></label>
+    <button onclick="add()">登録</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>日付</th>
+        <th>曜日</th>
+        <th>内容</th>
+        <th>状態</th>
+        <th>残日数</th>
+        <th>通知</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody id="list"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
